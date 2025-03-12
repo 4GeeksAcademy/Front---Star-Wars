@@ -1,9 +1,12 @@
-// import React, { useContext } from "react";
-import "../../styles/home.css";
-import Card from "../component/Card";
+import React, { useContext } from "react";
+// import "../../styles/home.css";
+// import Card from "../component/Card";
+import Card from "../components/Card";
 import { Context } from "../store/appContext";
-import Cardplanets from "../component/Cardplanets";
-import Cardvehicles from "../component/Cardvehicles";
+// import Cardplanets from "../component/Cardplanets";
+import Cardplanets from "../components/Cardplanets";
+// import Cardvehicles from "../component/Cardvehicles";
+import Cardvehicles from "../components/Cardvehicles";
 
 
 

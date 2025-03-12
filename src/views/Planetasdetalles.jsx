@@ -13,7 +13,7 @@ const Detailsplanets = () => {
 
     return (
         <div className="d-flex ">
-            <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" style={{ width: "400px", height: "150px" }} />
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/10/major-star-wars-planets-future-image.jpg" style={{ width: "400px", height: "150px" }} />
             <div >
                 <h1>{planets.name}</h1>
                 <p>Details about {planets.name} will go here.</p>

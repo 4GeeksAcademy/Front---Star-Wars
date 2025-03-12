@@ -1,14 +1,14 @@
-// import React, { useActionState, useContext, useEffect, useState } from 'react';
+import React, { useActionState, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Context } from '../store/appContext';
 
 const Details = () => {
     const { id } = useParams(); // saco la id de la URL
     const { store, actions } = useContext(Context); // Entro al contexto global, donde esta toda la informacion
-    const character = store.characters.find(char => String(char.uid) === String(id)) || {};//En la SWAPI id es un string,evitar que character sea undefined
+    const character = store.character.find(char => String(char.uid) === String(id)) || {};//En la SWAPI id es un string,evitar que character sea undefined
     // entro en store, busco character que sea = a una id
-    const planet = store.planets.find(char => String(char.uid) === String(id)) || {};
-    const vehicle = store.vechicles.find(char => String(char.uid) === String(id)) || {};
+    const planet = store.planet.find(char => String(char.uid) === String(id)) || {};
+    const vehicle = store.vechicle.find(char => String(char.uid) === String(id)) || {};
 
     useEffect(() => {
         actions.getCharacter(id);

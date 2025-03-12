@@ -1,23 +1,24 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
+// import ScrollToTop from "../components/scrollToTop";
+import ScrollToTop from "../components/ScrollToTop";
 
-import Home from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
+import Home from "./Home";
+import  Demo  from "./Demo";
+import  Single  from "./Single";
 import injectContext from "../store/appContext";
 
-import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
-import Details from "./views/Detalles";
-import Detailsplanets from "./views/Detallesplanetas";
-import Detailsvehicles from "./views/Detallesvehicles";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import Detalles from "./Detalles";
+import Planetasdetalles from "./Planetasdetalles";
+import Vehiculosdetalles from "./Vehiculosdetalles";
 
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
 	// you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
-	const basename = process.env.BASENAME || "";
+	const basename = import.meta.env.BASENAME || "";
 
 	return (
 		<div>
@@ -28,9 +29,9 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
-						<Route path="/details/:id" element={<Details />} />
-						<Route path="/detailsplanets/:id" element={<Detailsplanets />} />
-						<Route path="/detailsvehicles/:id" element={<Detailsvehicles />} />
+						<Route path="/detalles/:id" element={<Detalles />} />
+						<Route path="/planetasdetalles/:id" element={<Planetasdetalles />} />
+						<Route path="/vehiculosdetalles/:id" element={<Vehiculosdetalles />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />

@@ -11,8 +11,8 @@ const Card = ({ id, name }) => {
     return (
         <div className="card" style={{ width: "20rem", height: "25rem" }}>
             <img
-                src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg"
-                style={{ width: "auto", height: "150px" }}
+                src="https://image.api.playstation.com/vulcan/img/rnd/202105/1714/WHeOu95nW2SZQy6H5IKgE2Bg.png"
+                style={{ width: "auto", height: "250px" }}
                 alt={name}
             />
             <div className="card-body">
@@ -21,7 +21,7 @@ const Card = ({ id, name }) => {
                     Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
                 <div className="d-flex justify-content-between">
-                    <Link to={`/details/${id}`} className="btn btn-outline-primary">
+                    <Link to={`/detalles/${id}`} className="btn btn-outline-primary">
                         Learn More!
                     </Link>
                     <button

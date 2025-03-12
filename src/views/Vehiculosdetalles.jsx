@@ -13,7 +13,7 @@ const Detailsvehicles = () => {
 
     return (
         <div className="d-flex ">
-            <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" style={{ width: "400px", height: "150px" }} />
+            <img src="https://i.blogs.es/e8942b/millennium-falcon/650_1200.jpg" style={{ width: "400px", height: "150px" }} />
             <div >
                 <h1>{vehicles.name}</h1>
                 <p>Details about {vehicles.name} will go here.</p>
