@@ -13,6 +13,7 @@ import { Footer } from "../components/Footer";
 import Detalles from "./Detalles";
 import Planetasdetalles from "./Planetasdetalles";
 import Vehiculosdetalles from "./Vehiculosdetalles";
+import Personajesdetalles from "./Personajesdetalles";
 
 //create your first component
 const Layout = () => {
@@ -29,7 +30,7 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
-						<Route path="/detalles/:id" element={<Detalles />} />
+						<Route path="/personajesdetalles/:id" element={<Personajesdetalles />} />
 						<Route path="/planetasdetalles/:id" element={<Planetasdetalles />} />
 						<Route path="/vehiculosdetalles/:id" element={<Vehiculosdetalles />} />
 						<Route path="*" element={<h1>Not found!</h1>} />

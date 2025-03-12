@@ -21,7 +21,7 @@ const Card = ({ id, name }) => {
                     Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
                 <div className="d-flex justify-content-between">
-                    <Link to={`/detalles/${id}`} className="btn btn-outline-primary">
+                    <Link to={`/personajesdetalles/${id}`} className="btn btn-outline-primary">
                         Learn More!
                     </Link>
                     <button
