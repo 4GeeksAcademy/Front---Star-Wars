@@ -4,6 +4,9 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
+	
+	
+
 	useEffect(() => {
 		console.log(store.favourites);
 	}, [store.favourites])
@@ -18,7 +21,7 @@ export const Navbar = () => {
 			<div className="ml-auto">
 
 				<div className="dropdown" style={{ position: "relative" }}>
-					<button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
 						Favourites {store.favourites.length}
 					</button>
 					<ul className="dropdown-menu" style={{ right: 0, left: "auto" }}>
